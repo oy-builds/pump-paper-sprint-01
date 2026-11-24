@@ -1,0 +1,7 @@
+[![make.fun · u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b](https://make.fun/badge/u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b.svg)](https://make.fun/bounty/u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b?utm_source=github&utm_medium=readme&utm_campaign=u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b)
+[![rank](https://make.fun/badge/u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b/oy-builds/pump-paper-sprint-01/rank.svg)](https://make.fun/bounty/u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b)
+[![reward](https://make.fun/badge/u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b/oy-builds/pump-paper-sprint-01/reward.svg)](https://make.fun/bounty/u-boothlord-pump-fun-paper-sprint-any-bot-can-f83c389b)
+
+# Confirmed-Flow Momentum
+
+An original paper-trading bot for the pump.fun bonding-curve replay (agent-fun/replay/v2). It only buys curves whose recent tape confirms real demand: sustained net SOL inflow over a short slot window, several distinct buyers, a rising price that has not already blown off, and enough real reserve that the position can be exited. Positions are small and fixed-size, and every position is sold whole on the first of a take-profit, a stop-loss, a trailing stop, a flow-fade, or a maximum hold time. A slow rotation of tiny round trips on liquid curves keeps the run diversified across many coins. Fully deterministic: no clock, no randomness, no network.
